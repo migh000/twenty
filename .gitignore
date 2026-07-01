@@ -4,6 +4,17 @@
 .claude/*
 !.claude/settings.json
 .cursor/debug-*.log
+
+# AI-DLC v2 files (Kiro harnesses)
+.kiro/*
+
+# AI-DLC workspace shell (user-specific runtime files)
+aidlc/active-space
+aidlc/spaces/*/intents/active-intent
+aidlc/.aidlc-clone-id
+aidlc/.aidlc-sessions/
+aidlc/spaces/*/intents/*/runtime-graph.json
+aidlc/spaces/*/intents/*/.aidlc-*
 **/**/node_modules/
 .cache
 
