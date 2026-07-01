@@ -1,9 +1,45 @@
 **/**/.env
 .DS_Store
 /.idea
-.claude/*
-!.claude/settings.json
+# Claude Code configuration
+.claude/settings.local.json
+.claude/.aidlc-*
 .cursor/debug-*.log
+
+# Claude Code - track AI DLC harness files
+!.claude/
+!.claude/CLAUDE.md
+!.claude/agents/
+!.claude/aidlc-common/
+!.claude/hooks/
+!.claude/knowledge/
+!.claude/rules/
+!.claude/scopes/
+!.claude/sensors/
+!.claude/settings.json
+!.claude/settings.local.json.example
+!.claude/skills/
+!.claude/tools/
+
+# Kiro harnesses - track framework files, ignore user-local state
+!.kiro/
+!.kiro/agents/
+!.kiro/hooks/
+!.kiro/knowledge/
+!.kiro/scopes/
+!.kiro/sensors/
+!.kiro/settings/
+!.kiro/skills/
+!.kiro/tools/
+.kiro/settings/mcp.json
+
+# AI-DLC workspace shell (user-specific runtime files)
+aidlc/active-space
+aidlc/spaces/*/intents/active-intent
+aidlc/.aidlc-clone-id
+aidlc/.aidlc-sessions/
+aidlc/spaces/*/intents/*/runtime-graph.json
+aidlc/spaces/*/intents/*/.aidlc-*
 **/**/node_modules/
 .cache
 
